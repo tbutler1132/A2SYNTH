@@ -1,0 +1,31 @@
+{
+  "$id": "https://a2synth/ontology.json",
+  "title": "A2Synth Ontology",
+  "$defs": {
+    "TextEntity": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "content": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "Post":  { "$ref": "#/$defs/TextEntity" },
+    "Page":  { "$ref": "#/$defs/TextEntity" },
+    "Essay": { "$ref": "#/$defs/TextEntity" },
+    "Song": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "lyrics": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
