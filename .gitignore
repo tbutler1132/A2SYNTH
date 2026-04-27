@@ -2,3 +2,17 @@ node_modules/
 private/
 .DS_Store
 tmp/
+
+# Asset binaries — colocated with entities, kept out of git.
+data/assets/**/*.mp4
+data/assets/**/*.mov
+data/assets/**/*.wav
+data/assets/**/*.mp3
+data/assets/**/*.flac
+data/assets/**/*.aif
+data/assets/**/*.aiff
+data/assets/**/*.png
+data/assets/**/*.jpg
+data/assets/**/*.jpeg
+data/assets/**/*.gif
+data/assets/**/*.webp
