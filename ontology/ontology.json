@@ -2,7 +2,7 @@
   "$id": "https://a2synth/ontology.json",
   "title": "A2Synth Ontology",
   "$defs": {
-    "TextEntity": {
+    "Page": {
       "type": "object",
       "required": ["name"],
       "additionalProperties": false,
@@ -13,15 +13,23 @@
         "updated_at": { "type": "string", "format": "date-time" }
       }
     },
-    "Page":  { "$ref": "#/$defs/TextEntity" },
-    "Essay": { "$ref": "#/$defs/TextEntity" },
+    "Essay": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "content": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+      }
+    },
     "Song": {
       "type": "object",
       "required": ["name"],
       "additionalProperties": false,
       "properties": {
         "name": { "type": "string" },
-        "lyrics": { "type": "string" },
         "created_at": { "type": "string", "format": "date-time" },
         "updated_at": { "type": "string", "format": "date-time" }
       }

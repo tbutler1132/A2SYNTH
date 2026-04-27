@@ -31,7 +31,7 @@ SQLite tomorrow; the schema doesn't move.
 
 Current entities: `Song`, `Page`, `Essay`.
 
-- Songs are written by the user; body field is `lyrics`.
+- Songs are written by the user; body field is TBD (no body yet).
 - Pages are richer (think full HTML); body field is `content`.
 - Essays are long-form prose; body field is `content`.
 
@@ -42,7 +42,8 @@ Only `name` is required. Drafts validate.
 Entities are markdown files with YAML frontmatter:
 
 - Frontmatter holds structured metadata (`name`, timestamps, …).
-- The markdown body becomes the entity's body field (`content` or `lyrics`).
+- The markdown body becomes the entity's body field (`content` for Page
+  and Essay; Song has no body field yet).
 - Loaders map body → target field per type, then validate the resulting
   object against the schema.
 

@@ -17,7 +17,7 @@ export function validate(entityName, data) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const cases = [
-    ["Song", { name: "Hey Jude", lyrics: "na na na", created_at: "2026-04-26T12:00:00Z" }],
+    ["Song", { name: "Hey Jude", created_at: "2026-04-26T12:00:00Z" }],
     ["Song", { name: "Bad Date", created_at: "yesterday" }],
     ["Essay", { name: "On Time", content: "draft" }],
     ["Page", { name: "Hi", extra: "nope" }]
