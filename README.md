@@ -5,7 +5,7 @@
 ```
 ontology/   Logical schema for all entity types.
 data/       Authored content (markdown + frontmatter) and assets.
-UI/         Frontend.
+ui/         Frontend.
 ```
 
 ## Validate
