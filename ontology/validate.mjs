@@ -20,7 +20,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     ["Song", { name: "Hey Jude", created_at: "2026-04-26T12:00:00Z" }],
     ["Song", { name: "Bad Date", created_at: "yesterday" }],
     ["Essay", { name: "On Time", content: "draft" }],
-    ["Page", { name: "Hi", extra: "nope" }]
+    ["Page", { name: "Hi", extra: "nope" }],
+    ["Vision", { name: "A2SYNTH", statement: "A personal content system rooted in beauty.", content: "The full elaboration of what this is for...", created_at: "2026-04-27T09:00:00Z" }]
   ];
   for (const [type, data] of cases) {
     const { valid, errors } = validate(type, data);
