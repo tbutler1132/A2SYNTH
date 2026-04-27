@@ -1,6 +1,6 @@
 # A2SYNTH
 
-A personal content system. Songs, posts, pages, essays — defined by an
+A personal content system. Songs, pages, essays — defined by an
 ontology, stored as markdown, eventually surfaced through a UI.
 
 ## North star: aesthetics
@@ -29,10 +29,9 @@ docs/            Project docs (when needed).
 The schema is the **logical contract** — storage-agnostic. Markdown today,
 SQLite tomorrow; the schema doesn't move.
 
-Current entities: `Song`, `Post`, `Page`, `Essay`.
+Current entities: `Song`, `Page`, `Essay`.
 
 - Songs are written by the user; body field is `lyrics`.
-- Posts are markdown content; body field is `content`.
 - Pages are richer (think full HTML); body field is `content`.
 - Essays are long-form prose; body field is `content`.
 

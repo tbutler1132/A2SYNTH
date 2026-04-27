@@ -13,7 +13,6 @@
         "updated_at": { "type": "string", "format": "date-time" }
       }
     },
-    "Post":  { "$ref": "#/$defs/TextEntity" },
     "Page":  { "$ref": "#/$defs/TextEntity" },
     "Essay": { "$ref": "#/$defs/TextEntity" },
     "Song": {
